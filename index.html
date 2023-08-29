@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>술고래: 전통주 펀딩 서비스</title>
+    <!--font-->
+    <script src="https://kit.fontawesome.com/312ff11b0d.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="src/js/00_common/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+          var includes1 = $('[data-include1="header"]');
+          
+          $.each(includes1, function(){
+             $(this).load('00_common/01_header.html');
+          });
+          
+        });
+    </script>
+    <link rel="stylesheet" href="../src/css/00_common/common.css"> 
+</head>
+<body>
+    
+    
+    <div data-include1="header" id="header"></div>
+
+    <table>
+        <thead>
+            <th>depth1</th>
+            <th>depth2</th>
+            <th>path</th>
+        </thead>
+        <tbody>
+            <td>60_funding</td>
+            <td>결제</td>
+            <td><a href="60_funding/72_fundingPayment.html" target="_blank">72_fundingPayment.html</a></td>
+        </tbody>
+    </table>
+    
+</body>
+</html>
