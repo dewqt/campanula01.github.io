@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--font-->
+    <script src="https://kit.fontawesome.com/312ff11b0d.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="src/js/00_common/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+
+          var includes1 = $('[data-include1="header"]');
+          
+          $.each(includes1, function(){
+             $(this).load('00_common/01_header.html');
+          });
+          
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div data-include1="header" id="header"></div><!--헤더 인클루드-->
+
+        <!--s:layout 설명을 위한 임시 Style(삭제예정) -->
+        <style>
+            #wrap_header{border:1px solid red;}
+            .wrap_center{border:1px solid blue}
+            
+        </style>
+        <!--e:layout 설명을 위한 임시 Style(삭제예정) -->
+
+        <div id="wrap_main">
+            <main class="wrap_center">
+
+                <h1>input 스타일</h1>
+                     <div class="TextField_field__1YZm7"><input placeholder="0" type="text" class="Input_input__3c0SX Input_md__1_tQH" aria-invalid="false" value=""><span class="TextField_fixedText__39HYz TextField_endText__3r7mA">원</span></div>    
+
+            </main>
+
+            
+
+        </div>
+        
+
+        <h1> 스타일</h1>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>술고래: 전통주 펀딩 서비스</title>
+    <!--font-->
+    <script src="https://kit.fontawesome.com/312ff11b0d.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="src/js/00_common/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+          var includes1 = $('[data-include1="header"]');
+          
+          $.each(includes1, function(){
+             $(this).load('00_common/01_header.html');
+          });
+          
+        });
+    </script>
+    <link rel="stylesheet" href="../src/css/00_common/common.css"> 
+    
+
+
+    <!--s:layout 설명을 위한 임시 Style(삭제예정) -->
+    <style>
+        #wrap{border:3px solid red;}
+        .box{border:1px solid gray;}
+        .wrap_center{border:3px solid DarkCyan;}
+        #wrap_main{position: relative;}
+        #float_box{position: fixed;background-color: azure;right:0;}
+        #wrap_main .flex_wrap{border:3px solid LightSlateGray;}
+        #wrap_main .flex_wrap .box{height:500px;background-color: azure;margin:5px;}
+        .box30{width:30%}
+        .box70{width:70%}
+        #wrap_main hr{margin:10px 0;}
+        .grid_item{height:300px;}
+        
+    </style>
+    <!--e:layout 설명을 위한 임시 Style(삭제예정) -->
+</head>
+<body>
+    <div id="wrap">
+        <h3 style="line-height:50px;color:red">id="wrap"</b> 적용</h3>
+        <ul>
+            <li>- 전체는 id wrap으로 감싼다.</li>
+            <li>- pc - padding:0 40px;</li>
+            <li>- mobile - padding:0 20px;</li>                 
+        </ul>
+
+        
+
+        <div id="wrap_main">
+            
+            <div class="box" id="float_box">
+                <p>가운데 정렬이 아닌 경우 <br>wrap_center 밖에 위치</p>
+            </div>
+
+
+            <main class="wrap_center">
+
+                <!-- s:  여기서 부터-->
+                <h3 style="line-height:50px;color:DarkCyan">class="wrap_center"</b> 적용</h3>
+                <ul>
+                    <li>- 가운데 정렬</li>
+                    <li>- max-width:1141px;width:100%;</li>
+                    <li>- padding:0 20px;</li>                 
+                </ul>
+                <hr>
+                <h3 style="line-height:50px;color:LightSlateGray">class="flex_wrap"</b> 적용</h3>
+                <ul>
+                    <li>- 자식요소의 수평 정렬</li>
+                </ul>
+                <hr>
+                <h3><a href="">list 4col 레이아웃</a></h3>
+                <div class="flex_wrap adjust_lp16">                    
+                    <div class="grid_item product-item">
+                        <img src="src/img/00_common/sample_1.jpg" alt="Product 1">
+                        <div class="product-info">
+                            <h3 class="product-title">상품 제목</h3>
+                            <p class="product-price">23000 원</p>
+                        </div>
+                    </div>
+                    <div class="grid_item product-item">
+                        <img src="src/img/00_common/sample_2.jpg" alt="Product 1">
+                        <div class="product-info">
+                            <h3 class="product-title">상품 제목</h3>
+                            <p class="product-price">23000 원</p>
+                        </div>
+                    </div>
+                    <div class="grid_item product-item">
+                        <img src="src/img/00_common/sample_3.jpg" alt="Product 1">
+                        <div class="product-info">
+                            <h3 class="product-title">상품 제목</h3>
+                            <p class="product-price">23000 원</p>
+                        </div>
+                    </div>
+                    <div class="grid_item product-item">
+                        <img src="src/img/00_common/sample_4.jpg" alt="Product 1">
+                        <div class="product-info">
+                            <h3 class="product-title">상품 제목</h3>
+                            <p class="product-price">23000 원</p>
+                        </div>
+                    </div>                
+                </div>
+               
+            
+            <!-- E:  여기서 까지-->
+            </main>
+            
+         </div>
+    
+
+    </div>
+</body>
+</html>

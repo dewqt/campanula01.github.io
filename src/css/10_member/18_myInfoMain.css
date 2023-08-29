@@ -1,0 +1,16 @@
+.wrap_aside{width: 200px;background-color: bisque;padding-right: 16px;border: 3px solid blue;}
+.wrap_content{width: calc(100% - 200px);background-color: red;}
+.wrap_myInfo{width: 100%;    -webkit-box-flex: 0;
+    flex-grow: 0;}
+
+@media screen and (max-width: 768px) {
+    .wrap_aside{width: 100%;padding-right: 0px;}
+    .wrap_content{width: 100% ;}
+}
+    
+@media screen and (max-width: 1024px) {
+    .product-item{
+        flex-basis: 33.3%;
+        max-width: 33.3%;   
+    }
+}

@@ -1,0 +1,297 @@
+.purchase_title {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+ul{
+  list-style: none;
+}
+.text{
+  font-size: 12px;
+  color: gray;
+}
+#form_all{
+  margin: 0 auto;
+  width: 800px;
+}
+
+/*원*/
+#purchase_wrap {
+  padding: 30px;
+  position: relative;
+}
+
+#purchase_step {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  left: 30%;
+}
+
+.circle_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #96dcf0;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 40px;
+  z-index: 1;
+}
+
+.circle_selected {
+  width: 100px;
+  height: 100px;
+  background-color: #96dcf0;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 40px;
+  z-index: 1;
+  background-color: #00b7d4;
+}
+
+.word {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.connector {
+  position: absolute;
+  width: 400px;
+  height: 1px;
+  top: calc(50% - 0.5px);
+  left: calc(50% - 200px);
+}
+
+.connector::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-top: 1px dashed #00b7d4;
+  background: none;
+  transform: translateY(-50%);
+}
+
+
+/*체크박스*/
+input[type="checkbox"] {
+  /* 기본 체크박스 스타일 제거 */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+  border: 1px solid #00b7d4; /* 테두리 추가 */
+  background-color: white; /* 배경을 흰색으로 설정 */
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+/* 체크된 상태의 스타일 */
+input[type="checkbox"]:checked {
+  background-color: #00b7d4; /* 체크한 경우 배경을 변수 색상으로 설정 */
+}
+
+/* 체크된 상태에서의 체크 표시 */
+input[type="checkbox"]:checked::before {
+  content: "\2714"; /* 체크 표시 문자 */
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: white; /* 흰색으로 설정 */
+}
+
+/* 체크하지 않았을 때의 체크 표시 */
+input[type="checkbox"]::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: transparent;
+}
+
+#point_input{
+  color: #00b7d4;
+}
+
+.sum{
+  text-align: right;
+}
+
+
+.orader_add_info dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.orader_add_info dt,
+.orader_add_info dd {
+  flex: 0 0 50%; /* 두 개의 요소를 가로로 나란히 배치 */
+  width: 200px;
+  padding: 5px;
+}
+
+.right_aligned {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.delivery_wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.supporter_info {
+  background-color: #96dcf05e;
+  border-radius: 30px;
+  padding: 20px;
+  width: 250px;
+}
+
+.delivery {
+  background-color: white;
+  border-radius: 30px;
+  margin-left: auto;
+  width: 450px;
+}
+
+
+input[type="radio"] {
+  /* 기본 체크박스 스타일 제거 */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+  border: 1px solid #00b7d4; /* 테두리 추가 */
+  background-color: white; /* 배경을 흰색으로 설정 */
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* 체크된 상태의 스타일 */
+input[type="radio"]:checked {
+  background-color: #00b7d4; /* 체크한 경우 배경을 변수 색상으로 설정 */
+}
+
+/* 체크된 상태에서의 체크 표시 */
+input[type="radio"]:checked::before {
+  content: "\2714"; /* 체크 표시 문자 */
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: white; /* 흰색으로 설정 */
+}
+
+/* 체크하지 않았을 때의 체크 표시 */
+input[type="radio"]::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: transparent;
+}
+
+#supporter_title, #supporter_name, #supporter_email, #supporter_tel{
+  margin: 20px 0px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #00000011;
+}
+
+#supporter_name_default, #supporter_email_default, #supporter_tel_default{
+  margin-bottom: 5px;
+  color: #00b7d4;
+}
+
+#delivery_address_search{
+  background-color: #00b7d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+}
+.divide_place{
+  width: 100%;
+  height: 10px;
+  background-color: #00b8d40d;
+  margin: 10px 0px;
+
+}
+
+#purchase_caution_title, .purchase_agree_title, .pay_purchase_title{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+#purchase_caution_content{
+  margin: 10px;
+  background-color: rgba(128, 128, 128, 0.189);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+  /* 버튼 컨테이너 */
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* 화면 높이 만큼 컨테이너의 높이 설정 */
+  }
+
+  /* 버튼 스타일 */
+  #pay_purchase_final {
+    width: 200px;
+    height: 40px;
+    background-color: #00b7d4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
+
+  /* 768px 이하인 경우에만 적용되는 스타일 */
+@media (max-width: 768px) {
+  #header {
+    display: none;
+  }
+}
