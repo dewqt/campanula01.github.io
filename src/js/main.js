@@ -1,17 +1,19 @@
 
+
+  
     // 슬라이드
     $(document).ready(function() {
       var $slider = $('.slider');
       var slickOptions = {
         autoplay: false,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 1200,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 2,
               arrows: false,
             }
           },
@@ -59,14 +61,14 @@
       var $banner = $('.banner');
       var slickOptions = {
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 1,
               arrows: false,
             }
           },
@@ -145,4 +147,7 @@
                 heartStates[id] = !heartStates[id];
             });
         });
+
+      
+
 

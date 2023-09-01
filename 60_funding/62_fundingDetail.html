@@ -9,7 +9,8 @@
     <script src="\src\js\60_funding\62_fundingDetail.js"></script>
     <script src="https://kit.fontawesome.com/312ff11b0d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../src/css/00_common/header.css">
-    <link rel="stylesheet" href="../src/css/60_funding/62_fundingDetail.css">
+   
+    <link rel="stylesheet" href="../src/css/60_funding/61_fundingDetail.css">
 
     <script type="text/javascript">
         $(function(){
@@ -37,229 +38,7 @@
             selectedRewardPrice.textContent = rewardPrice;
         }
     </script>
-    <style>
-
-                      /* 판매자 정보 픽스 스타일 */
-                      .reward-selection {
-            width: 250px;
-            max-height: calc(100vh - 100px);
-            overflow-y: auto;
-            border: 1px solid #ccc;
-            padding: 20px;
-            position: fixed;
-            top: 100px;
-            right: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* 판매자 정보 위로 픽스 스타일 */
-        .creator-introduction {
-            position: sticky;
-            top: 100px;
-            margin-top: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* 추가한 창작자 소개 스타일 */
-        .creator-name {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .last-login {
-            font-size: 14px;
-            color: #666;
-        }
-
-        .creator-quote {
-            font-style: italic;
-            margin-top: 10px;
-        }
-        /* 사용자 정의 스타일 추가 */
-        /* 이전에 제시한 스타일을 사용하거나 수정 가능합니다 */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .product-detail-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        .product-slider {
-            flex: 1;
-            margin-right: 20px;
-            max-width: 500px;
-        }
-
-        .product-slide img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px 20px;
-        }
-
-        .product-detail-row  {
-            width: 70%;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .product-detail-img img {
-            width: 100%;
-            height: 500px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .product-details {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            max-width: 500px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            text-align: left;
-        }
-
-        .product-info {
-            margin-bottom: 15px;
-        }
-
-        .subject {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .tage {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-        }
-
-        .tage li {
-            font-size: 14px;
-            color: #666;
-        }
-
-        .project-progress {
-            display: flex;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        .progress-bar {
-            flex: 1;
-            height: 10px;
-            background-color: #ccc;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        .progress {
-            height: 100%;
-            width: 46.79%;
-            background-color: #2385e0;
-            border-radius: 5px;
-        }
-
-        .price {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: auto;
-        }
-
-        .reward-selection {
-            width: 250px;
-            max-height: calc(100vh - 100px);
-            overflow-y: auto;
-            border: 1px solid #ccc;
-            padding: 20px;
-            position: fixed;
-            top: 100px;
-            right: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .reward-options {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .reward-option {
-            cursor: pointer;
-            transition: background-color 0.3s;
-            padding: 15px;
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .reward-option:hover {
-            background-color: #eaeaea;
-        }
-
-        .selected {
-            background-color: #d8d8d8;
-        }
-
-        .reward-details {
-            border-top: 1px solid #ccc;
-            padding-top: 20px;
-            margin-top: 20px;
-        }
-
-        .reward-details h2 {
-            margin-bottom: 10px;
-        }
-
-        .reward-details h3 {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-
-        .reward-details p {
-            font-size: 16px;
-        }
-
-        .purchase-button {
-            display: block;
-            width: 100%;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #2385e0;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .purchase-button:hover {
-            background-color: #1a68b5;
-        }
-
- 
- 
-    </style>
+  
 </head>
 <body>
     <div id="wrap">
@@ -282,25 +61,23 @@
                 <div class="product-details">
                     <div class="product-info">
                         <div class="subject">고도리 체리 와인</div>
-                        <ul class="tage">
+                        <ul class="content">
                             <li>#새콤달콤 체리향 가득한 디저트 와인</li>
                             <li>#체리로 만든 와인 #디져트 와인</li>
-                            <li>#전통주 입문자 용</li>
-                            <li>#전통주 입문자 용</li>
+                            <li>#전통주 입문자 용</li>     
                         </ul>
                     </div>
                     <div class="project-progress">
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
+                      
                     </div>
-                    <ul class="tage">
-                        <li>목표금액: 2,000,000</li>
-                        <li>도수: 10.00%</li>
-                        <li>용량: 375ml</li>
-                        <li>배송기간: 2일 이내 배송</li>
-                        <li>유통기한: 유통기한 없음</li>
-                        <li>보관방법: 직사광선을 피하고 서늘한 곳에 세워서 보관</li>
+                    <ul class="content">
+                        <li>목표금액 : 2,000,000</li>
+                        
+                        <li>용량 : 375ml</li>
+                        <li>배송기간 : 2일 이내 배송</li>
+                      
+                        <li>유통기한 : 유통기한 없음</li>
+                        <li>보관방법 : 직사광선을 피하고 서늘한 곳에 세워서 보관</li>
                     </ul>
                     <!-- 가격 -->
                     <div class="price">25,000원</div>
@@ -334,44 +111,43 @@
             </div>
         </div>
     </div>
-  <!-- 추가한 창작자 소개 -->
-  <div class="creator-introduction">
-    <div class="creator-name">아이워즈플라스틱</div>
-    <div class="last-login">마지막 로그인 1일 전</div>
-    <div class="creator-quote">"예쁘지만 착했으면 좋겠어"</div>
-    <p>
-        안녕하세요. 저희는 페트병에서 탄생한 예쁘고 착한 가방을 만드는
-        "IWP 아이워즈플라스틱" 입니다.
-        착한 제품과 함께 선한 영향력으로
-        환경과 사회에 기여하는 브랜드가 되겠습니다.
-        3년 연속 월드비전을 통해 아이들을 위한 기부를 하고있습니다.
-    </p>
-</div>
-</div>
-</div>
-    <!-- 리워드 선택 -->
+>
 
-    
-    <div class="reward-selection">
-        
-        <div class="reward-options">
-            <div class="reward-option" onclick="selectReward(this)">
-                <h3>고도리 체리 와인 375ml</h3>
-                <p>25,000원</p>
+<div class="reward-selection">
+    <div class="creator-profile">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="../src/img/00_common/sample_6.jpg" alt="창작자 프로필 이미지">
             </div>
-            <div class="reward-option" onclick="selectReward(this)">
-                <h3>고도리 복숭아 와인 375ml</h3>
-                <p>25,000원</p>
-            </div>
+            <h2>창작자 이름</h2>
         </div>
-        <div class="reward-details" id="selectedRewardDetails">
-            <h2>선택한 리워드 상세정보</h2>
-            <h3 id="selectedRewardTitle"></h3>
-            <p id="selectedRewardPrice"></p>
-        </div>
-        <a href="../60_funding/71_fundingReward.html"><button class="purchase-button">구매하기</button>
+        <p>창작자 소개 내용이 여기에 들어갑니다.</p>
+        <p>창작자 소개 내용이 여기에 들어갑니다.</p>
+        <p>창작자 소개 내용이 여기에 들어갑니다.</p>
+        <p>창작자 소개 내용이 여기에 들어갑니다.</p>
+        <p>창작자 소개 내용이 여기에 들어갑니다.</p>
+        <p>창작자 소개 내용이 여기에 들어갑니다.</p>
+        <p>창작자 소개 내용이 여기에 들어갑니다.</p>
     </div>
-
+    <br>
+    
+    <div class="reward-options">
+        <div class="reward-option" onclick="selectReward(this)">
+            <h3>고도리 체리 와인 375ml</h3>
+            <p>25,000원</p>
+        </div>
+        <div class="reward-option" onclick="selectReward(this)">
+            <h3>고도리 복숭아 와인 375ml</h3>
+            <p>25,000원</p>
+        </div>
+    </div>
+    <div class="reward-details" id="selectedRewardDetails">
+        <h2>선택한 리워드 상세정보</h2>
+        <h3 id="selectedRewardTitle"></h3>
+        <p id="selectedRewardPrice"></p>
+    </div>
+    <a href="../60_funding/71_fundingReward.html"><button class="purchase-button">구매하기</button></a>
+</div>
 </div>
     
 </body>

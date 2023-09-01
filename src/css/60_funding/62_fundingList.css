@@ -31,13 +31,7 @@ body, h1, h2, h3, p, ul, li {
     font-family: Arial, sans-serif;
   }
   
-  /* Main Content Styles */
-  .main-content {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-   
-  }
+
   
   .product-list {
     display: grid;
@@ -52,7 +46,10 @@ body, h1, h2, h3, p, ul, li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid;
+    box-shadow: 0 2px 4px #00b8d42d;
+    position: relative;
+    border-radius: 20px 20px;
+
   }
   
   .product-item img {
@@ -61,13 +58,16 @@ body, h1, h2, h3, p, ul, li {
   }
   
   .product-info {
+    position: relative; /* 추가: 좋아요 버튼의 상대 위치를 조정하기 위해 */
     margin-top: 10px;
     text-align: center;
-  }
-  
+    
+
+}
   .product-title {
     font-size: 16px;
     margin-bottom: 5px;
+    font-weight: bold;
   }
   
   .product-price {
@@ -76,7 +76,7 @@ body, h1, h2, h3, p, ul, li {
   
   
 /* 최소화될 때 이미지가 2개씩 보이도록 설정 */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .product-list {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -89,86 +89,8 @@ body, h1, h2, h3, p, ul, li {
     box-sizing: border-box;
 }
 
-/* 배너 이미지 스타일 */
-.banner img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-/* 슬라이더 스타일 */
-.slider {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.slick-slide {
-    margin: 10px;
-    position: relative; /* 추가 */
-}
-
-.slider_div {
-    position: relative;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center; /* 추가 */
-}
-
-.slick-prev:before,
-.slick-next:before {
-    color: #444444;
-    font-size: 24px; /* 추가 */
-}
 
 
-/* 기타 스타일 */
-.gap {
-    height: 15px;
-    margin: 0;
-    padding: 0;
-}
-
-.sinsin {
-    color: #00b7d4;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    margin: 0;
-    width: 80px;
-    border-radius: 40%;
-}
-
-.subject {
-    margin-top: 10px;
-    height: 38px;
-    font-size: 13px;
-    text-align: left;
-    line-height: normal;
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    word-break: break-all;
-    font-weight: bold;
-}
-
-.price {
-    width: 80px;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 0;
-    padding: 0;
-}
-
-.hr {
-    width: 100%;
-    height: 2px;
-    background-color: #eee;
-    margin-top: 10px;
-}
 
 .tage {
     margin: 10px 0;
@@ -185,36 +107,40 @@ body, h1, h2, h3, p, ul, li {
 }
 
 
-
-/* 좋아요 버튼 스타일 */
-.likeempty {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #8d1616;
-    cursor: pointer;
-    z-index: 1;
-    transition: color 0.3s ease-in-out;
+.wrap_center_list .likeempty {
+  
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  color: #00b7d4;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  cursor: pointer;
+  z-index: 1;
+  transition: color 0.3s ease-in-out;
 }
 
-.slider_div:hover .likeempty {
-    color: #00b7d4;
+.wrap_center_list .product-item:hover .likeempty {
+  color: #8d1616;
 }
-
-.fa-regular,
+.wrap_center_list .fa-heart{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.wrap_center_list likeempty .fa-regular,
 .fa-solid {
-    position: absolute;
-    display: none;
-    color: #00b7d4;
+  position: absolute;
+  color: #00b7d4;
 }
 
-.fa-solid {
-    display: none;
+.wrap_center_list likeempty .fa-regular {
+  display: block;
+}
+
+.wrap_center_list likeempty .fa-solid {
+  display: none;
 }

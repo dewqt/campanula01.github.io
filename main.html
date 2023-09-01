@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Slick</title>
+    <title>Main</title>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/312ff11b0d.js" crossorigin="anonymous"></script>
@@ -25,21 +25,22 @@
 <body>
     <div id="wrap">
         <div data-include1="header" id="header"></div><!--헤더 인클루드-->
+        <div class="banner">
+            <div><img src="src/img/00_common/banner.jpg" alt=""></div>
+            <div><img src="src/img/00_common/banner2.jpg" alt=""></div>
+            <div><img src="src/img/00_common/banner3.jpg" alt=""></div>
+            <div><img src="src/img/00_common/banner.jpg" alt=""></div>
+            <div><img src="src/img/00_common/banner2.jpg" alt=""></div>
+            <div><img src="src/img/00_common/banner3.jpg" alt=""></div>
+            <div><img src="src/img/00_common/banner.jpg" alt=""></div>
+            <div><img src="src/img/00_common/banner2.jpg" alt=""></div>
+            <div><img src="src/img/00_common/banner3.jpg" alt=""></div>        
+        </div>
+        <div id="boarder"></div>
         <div id="wrap_main">
-            <div class="banner">
-                <div><img src="src/img/00_common/sample_1.jpg" alt=""></div>
-                <div><img src="src/img/00_common/sample_2.jpg" alt=""></div>
-                <div><img src="src/img/00_common/sample_3.jpg" alt=""></div>
-                <div><img src="src/img/00_common/sample_4.jpg" alt=""></div>
-                <div><img src="src/img/00_common/sample_5.jpg" alt=""></div>
-                <div><img src="src/img/00_common/sample_1.jpg" alt=""></div>
-                <div><img src="src/img/00_common/sample_4.jpg" alt=""></div>
-                <div><img src="src/img/00_common/sample_4.jpg" alt=""></div> 
-            </div>
-            <br>
-            <hr>
-            <br>
-            <main class="wrap_center">
+          
+            <main class="wrap_center_main">
+                <div class="wrap_center">
                 <a href="60_funding\61_fundingList.html"><p class="sinsin">인기순</p></a>
                 <div class="slider">
                     <div class="slider_div">
@@ -48,13 +49,12 @@
                             <i class="fa-solid fa-heart"></i>
                         </div><a href="60_funding\62_fundingDetail.html">
                         <img src="src/img/00_common/sample_6.jpg" alt="">
-                        <div class="subject">고도리 체리 와인</div>
-                        <p class="gap"></p>
-                        <div class="price">25,000원</div></a>
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
                         <div class="hr"></div>
-                        <ul class="tage">
-                            <li>#자두로 만든 와인</li>
-                            <li>#달콤한</li>
+                        <ul class="product-tage">              
+                            <li>#전통주 소물리에PICK</li>
+                         
                         </ul>
                     </div>
                     <div class="slider_div">
@@ -62,12 +62,11 @@
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart"></i>
                         </div><a href="60_funding\62_fundingDetail.html">
-                        <img src="src/img/00_common/sample_2.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
+                        <img src="src/img/00_common/sample_6.jpg" alt="">
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
                         <div class="hr"></div>
-                        <ul class="tage">
+                        <ul class="product-tage">
                             <li>#전통주 소물리에PICK</li>
                             <li>#전통주 입문자 용</li>
                         </ul>
@@ -78,26 +77,10 @@
                             <i class="fa-solid fa-heart"></i>
                         </div><a href="60_funding\62_fundingDetail.html">
                         <img src="src/img/00_common/sample_3.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
                         <div class="hr"></div>
-                        <ul class="tage">
-                            <li>#전통주 소물리에PICK</li>
-                            <li>#전통주 입문자 용</li>
-                        </ul>
-                    </div>
-                    <div class="slider_div">
-                        <div class="likeempty">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-heart"></i>
-                        </div><a href="60_funding\62_fundingDetail.html">
-                        <img src="src/img/00_common/sample_2.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
-                        <div class="hr"></div>
-                        <ul class="tage">
+                        <ul class="product-tage">
                             <li>#전통주 소물리에PICK</li>
                             <li>#전통주 입문자 용</li>
                         </ul>
@@ -108,11 +91,36 @@
                             <i class="fa-solid fa-heart"></i>
                         </div><a href="60_funding\62_fundingDetail.html">
                         <img src="src/img/00_common/sample_5.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
                         <div class="hr"></div>
-                        <ul class="tage">
+                        <ul class="product-tage">
+                            <li>#전통주 소물리에PICK</li>
+                            <li>#전통주 입문자 용</li>
+                        </ul>
+                    </div>      <div class="slider_div">
+                        <div class="likeempty">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div><a href="60_funding\62_fundingDetail.html">
+                        <img src="src/img/00_common/sample_3.jpg" alt="">
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
+                        <div class="hr"></div>
+                        <ul class="product-tage">
+                            <li>#전통주 소물리에PICK</li>
+                            <li>#전통주 입문자 용</li>
+                        </ul>
+                    </div>      <div class="slider_div">
+                        <div class="likeempty">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div><a href="60_funding\62_fundingDetail.html">
+                        <img src="src/img/00_common/sample_5.jpg" alt="">
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
+                        <div class="hr"></div>
+                        <ul class="product-tage">
                             <li>#전통주 소물리에PICK</li>
                             <li>#전통주 입문자 용</li>
                         </ul>
@@ -123,59 +131,27 @@
                             <i class="fa-solid fa-heart"></i>
                         </div><a href="60_funding\62_fundingDetail.html">
                         <img src="src/img/00_common/sample_4.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
                         <div class="hr"></div>
-                        <ul class="tage">
-                            <li>#전통주 소물리에PICK</li>
-                            <li>#전통주 입문자 용</li>
-                        </ul>
-                    </div>
-                    <div class="slider_div">
-                        <div class="likeempty">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-heart"></i>
-                        </div><a href="60_funding\62_fundingDetail.html">
-                        <img src="src/img/00_common/sample_5.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
-                        <div class="hr"></div>
-                        <ul class="tage">
+                        <ul class="product-tage">
                             <li>#전통주 소물리에PICK</li>
                             <li>#전통주 입문자 용</li>
                         </ul>
                     </div>
                 </div>
-                <hr>
+             
                 <div class="slider">
                     <div class="slider_div">
                         <div class="likeempty">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart"></i>
-                        </div>
-                        <img src="src/img/00_common/sample_1.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div>
-                        <div class="hr"></div>
-                        <ul class="tage">
-                            <li>#전통주 소물리에PICK</li>
-                            <li>#전통주 입문자 용</li>
-                        </ul>
-                    </div>
-                    <div class="slider_div">
-                        <div class="likeempty">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-heart"></i>
                         </div><a href="60_funding\62_fundingDetail.html">
-                        <img src="src/img/00_common/sample_1.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
+                        <img src="src/img/00_common/sample_5.jpg" alt="">
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
                         <div class="hr"></div>
-                        <ul class="tage">
+                        <ul class="product-tage">
                             <li>#전통주 소물리에PICK</li>
                             <li>#전통주 입문자 용</li>
                         </ul>
@@ -186,95 +162,95 @@
                             <i class="fa-solid fa-heart"></i>
                         </div><a href="60_funding\62_fundingDetail.html">
                         <img src="src/img/00_common/sample_2.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
                         <div class="hr"></div>
-                        <ul class="tage">
+                        <ul class="product-tage">
                             <li>#전통주 소물리에PICK</li>
                             <li>#전통주 입문자 용</li>
                         </ul>
-                    </div>
-                    <div class="slider_div">
-                        <div class="likeempty">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-heart"></i>
-                        </div><a href="60_funding\62_fundingDetail.html">
-                        <img src="src/img/00_common/sample_3.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
-                        <div class="hr"></div>
-                        <ul class="tage">
-                            <li>#전통주 소물리에PICK</li>
-                            <li>#전통주 입문자 용</li>
-                        </ul>
-                    </div>
-                    <div class="slider_div">
-                        <div class="likeempty">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-heart"></i>
-                        </div><a href="60_funding\62_fundingDetail.html">
-                        <img src="src/img/00_common/sample_2.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
-                        <div class="hr"></div>
-                        <ul class="tage">
-                            <li>#전통주 소물리에PICK</li>
-                            <li>#전통주 입문자 용</li>
-                        </ul>
-                    </div>
-                    <div class="slider_div">
+                    </div>      <div class="slider_div">
                         <div class="likeempty">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart"></i>
                         </div><a href="60_funding\62_fundingDetail.html">
                         <img src="src/img/00_common/sample_5.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
                         <div class="hr"></div>
-                        <ul class="tage">
+                        <ul class="product-tage">
                             <li>#전통주 소물리에PICK</li>
                             <li>#전통주 입문자 용</li>
                         </ul>
-                    </div>
-                    <div class="slider_div">
+                    </div>      <div class="slider_div">
                         <div class="likeempty">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart"></i>
                         </div><a href="60_funding\62_fundingDetail.html">
                         <img src="src/img/00_common/sample_4.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
                         <div class="hr"></div>
-                        <ul class="tage">
+                        <ul class="product-tage">
                             <li>#전통주 소물리에PICK</li>
                             <li>#전통주 입문자 용</li>
                         </ul>
-                    </div>
-                    <div class="slider_div">
+                    </div>      <div class="slider_div">
                         <div class="likeempty">
                             <i class="fa-regular fa-heart"></i>
                             <i class="fa-solid fa-heart"></i>
                         </div><a href="60_funding\62_fundingDetail.html">
-                        <img src="src/img/00_common/sample_5.jpg" alt="">
-                        <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
-                        <p class="gap"></p>
-                        <div class="price">50,000원</div></a>
+                        <img src="src/img/00_common/sample_3.jpg" alt="">
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
                         <div class="hr"></div>
-                        <ul class="tage">
+                        <ul class="product-tage">
+                            <li>#전통주 소물리에PICK</li>
+                            <li>#전통주 입문자 용</li>
+                        </ul>
+                    </div>      <div class="slider_div">
+                        <div class="likeempty">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div><a href="60_funding\62_fundingDetail.html">
+                        <img src="src/img/00_common/sample_2.jpg" alt="">
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
+                        <div class="hr"></div>
+                        <ul class="product-tage">
+                            <li>#전통주 소물리에PICK</li>
+                            <li>#전통주 입문자 용</li>
+                        </ul>
+                    </div>      <div class="slider_div">
+                        <div class="likeempty">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div><a href="60_funding\62_fundingDetail.html">
+                        <img src="src/img/00_common/sample_6.jpg" alt="">
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
+                        <div class="hr"></div>
+                        <ul class="product-tage">
+                            <li>#전통주 소물리에PICK</li>
+                            <li>#전통주 입문자 용</li>
+                        </ul>
+                    </div>      <div class="slider_div">
+                        <div class="likeempty">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div><a href="60_funding\62_fundingDetail.html">
+                        <img src="src/img/00_common/sample_2.jpg" alt="">
+                        <div class="product-title">고도리 체리 와인</div>
+                        <div class="product-price">25,000원</div></a>
+                        <div class="hr"></div>
+                        <ul class="product-tage">
                             <li>#전통주 소물리에PICK</li>
                             <li>#전통주 입문자 용</li>
                         </ul>
                     </div>
                 </div>
-                <hr>
-               
-                  
                 </div>
+            </div>
             </main>
         </div>
     </div>

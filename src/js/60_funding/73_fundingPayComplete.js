@@ -19,8 +19,5 @@ $(function() {
     }
   
     requestAnimationFrame(animate);
-
-
-
   });
   

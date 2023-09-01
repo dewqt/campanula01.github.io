@@ -1,5 +1,5 @@
-.wrap_aside{width: 200px;background-color: bisque;padding-right: 16px;border: 3px solid blue;}
-.wrap_content{width: calc(100% - 200px);background-color: red;}
+.wrap_aside{width: 200px;padding-right: 16px;}
+.wrap_content{width: calc(100% - 200px);}
 .wrap_myInfo{width: 100%;    -webkit-box-flex: 0;
     flex-grow: 0;}
 

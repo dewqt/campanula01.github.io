@@ -7,40 +7,21 @@
     <!--font-->
     <script src="https://kit.fontawesome.com/312ff11b0d.js" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="src/js/00_common/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="../src/js/00_common/jquery-3.7.0.min.js"></script>
     <script type="text/javascript">
         $(function(){
           var includes1 = $('[data-include1="header"]');
           
           $.each(includes1, function(){
-             $(this).load('00_common/01_header.html');
+             $(this).load('../00_common/01_header.html');
           });
           
         });
     </script>
     <link rel="stylesheet" href="../src/css/00_common/common.css"> 
+    <link rel="stylesheet" href="../src/css/00_common/header.css"> 
     <link rel="stylesheet" href="../src/css/10_member/18_myInfoMain.css"> 
-    
-    
-
-
-    <!--s:layout 설명을 위한 임시 Style(삭제예정) -->
-    <style>
-        #wrap{border:3px solid red;}
-        .box{border:1px solid gray;}
-        .wrap_center{border:3px solid DarkCyan;}
-        #wrap_main{position: relative;}
-        #float_box{position: fixed;background-color: azure;right:0;}
-        #wrap_main .flex_wrap{border:3px solid LightSlateGray;}
-        #wrap_main .flex_wrap .box{height:500px;background-color: azure;margin:5px;}
-        .box30{width:30%}
-        .box70{width:70%}
-        #wrap_main hr{margin:10px 0;}
-        .grid_item{height:300px;}
-        
-    </style>
-    <!--e:layout 설명을 위한 임시 Style(삭제예정) -->
-</head>
+ </head>
 <body>
     <div id="wrap">
 
@@ -51,11 +32,6 @@
         <div id="wrap_main">
                     
             <main class="wrap_center">
-                
-
-
-
-
                 <div class="flex_wrap wrap_myInfo">                    
                     <div class="wrap_aside">
                         <aside class="left">

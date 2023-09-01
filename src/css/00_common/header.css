@@ -124,23 +124,23 @@ cursor: pointer;
   border-radius: 4px;
   z-index: 1200;
   padding:15px 10px;
-  
+  display:none;
 }
 #wrap_mypage a{
   padding: 4px 16px;
-  display: flex;
-  width: 100%;
-  height: 40px;
-  min-height: 40px;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  justify-content: flex-start;
-  font-size: 14px;
-  line-height: 22px;
-  color: rgb(13, 13, 13);
-  cursor: pointer;
-  transition: all 0.3s ease-in-out 0s;
+    display: flex;
+    width: 100%;
+    height: 46px;
+    min-height: 46px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(13, 13, 13);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
 }
 #wrap_mypage li.border_top{
   border-top: 1px solid rgb(224, 224, 224);

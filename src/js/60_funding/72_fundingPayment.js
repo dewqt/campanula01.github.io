@@ -29,7 +29,6 @@ $(function() {
     $("#check_all").click(function() {
         if ($("#check_all").is(":checked")) $("input[name=check]").prop("checked", true);
         else $("input[name=check]").prop("checked", false);
-        $("#pay_purchase_final").prop("disabled", !this.checked);
     });
 
     $("input[name=check]").click(function() {
@@ -38,9 +37,5 @@ $(function() {
 
         if (total !== checked) $("#check_all").prop("checked", false);
         else $("#check_all").prop("checked", true); 
-        $("#pay_purchase_final").prop("disabled", !this.checked);
     });
-
-
-
 });
