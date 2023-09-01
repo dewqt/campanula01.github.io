@@ -6,6 +6,8 @@
   <title>리워드 선택</title>
   <script src="../src/js/00_common/jquery-3.7.0.min.js"></script>
   <script src="../src/js/00_common/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
   <link rel="stylesheet" href="../src/css/60_funding/71_fundingReward.css">
   <script src="../src/js/60_funding/71_fundingReward.js"></script>
   <script src="https://kit.fontawesome.com/312ff11b0d.js" crossorigin="anonymous"></script>
@@ -57,199 +59,199 @@
       <div id="reward_content_box">
         <h4>리워드 선택</h4>
 
-          <div class="reward_item_price">
-            <label>
-              <input type="checkbox" class="show_content_checkbox product" data-target="content1">
+        <div class="reward_item_price">
+          <label>
+            <input type="checkbox" class="show_content_checkbox product" data-target="content1">
 
-              33,500 원
+            33,500 원
 
-              <div class="reward_item_content">
-                <div class="reward_item_title">[375ml] 고도리 복숭아 와인 <span class="reward_item_max">최대 구매 가능 수량 500개</span>
-                </div>
+            <div class="reward_item_content">
+              <div class="reward_item_title">[375ml] 고도리 복숭아 와인 <span class="reward_item_max">최대 구매 가능 수량 500개</span>
+              </div>
 
-                <div class="reward_item_desciption">
-                  뭐야? 주스가 아니라 술이였어?
-                  #복숭아로 만든 와인 #아이스 와인
-                  <br />
-                  [375ml] 고도리 복숭아 와인 1병
-                </div>
+              <div class="reward_item_desciption">
+                뭐야? 주스가 아니라 술이였어?
+                #복숭아로 만든 와인 #아이스 와인
                 <br />
-                <div class="reward_delivery">
-                  <span><i class="fa-solid fa-bus-simple"></i>배송비 3,000원</span>
-                  <span class="reward_delivery_divide"> | </span>
-                  <span>2023년 09월 중순 리워드 제공 예정</span>
-
-                </div>
-              
-            </label>
-          </div>
-          
-          <br />
-
-          <div class="price_details" id="content1" price-per-unit="33500">
-            <div class="content_reward" id="content_reward1"> [375ml] 고도리 복숭아 와인 1병
-
-              <div class="close_button_content1" id="close_content1">&times;</div>
-            </div>
-
-            <br />
-            <div class="quantity_price_container">
-              <div class="quantity_container">
-                <button type="button" class="quantity_button_decrease">-</button>
-                <input type="text" id="quantity1" class="quantity_input" value="0" min="0" max="500">
-                <button type="button" class="quantity_button_increase">+</button>
+                [375ml] 고도리 복숭아 와인 1병
+              </div>
+              <br />
+              <div class="reward_delivery">
+                <span><i class="fa-solid fa-bus-simple"></i>배송비 3,000원</span>
+                <span class="reward_delivery_divide"> | </span>
+                <span>2023년 09월 중순 리워드 제공 예정</span>
 
               </div>
-              <p><span class="sum_price"> <span class="total_price">33500</span></span></p>
-              <br />
-            </div>
-          </div>
-        </div>
- 
 
-
-
-          <div class="reward_item_price">
-            <label>
-              <input type="checkbox" class="show_content_checkbox product" data-target="content2"> 38,000 원
-
-              <div class="reward_item_content">
-                <div class="reward_item_title">[750ml] 고도리 복숭아 와인 1병 <span class="reward_item_max">최대 구매 가능 수량
-                    500개</span></div>
-
-                <div class="reward_item_desciption">
-                  뭐야? 주스가 아니라 술이였어? 고도리 복숭아 와인 대용량!
-                  #복숭아로 만든 와인 #아이스 와인
-                  <br />
-                  [750ml] 고도리 복숭아 와인 1병
-                </div>
-                <br />
-                <div class="reward_delivery">
-                  <span><i class="fa-solid fa-bus-simple"></i>배송비 3,000원</span>
-                  <span class="reward_delivery_divide"> | </span>
-                  <span>2023년 09월 중순 리워드 제공 예정</span>
-
-                </div>
-              
-            </label>
-          </div>
-          <br />
-
-          <div class="price_details" id="content2" price-per-unit="38000">
-            <div class="content_reward" id="content_reward2">[750ml] 고도리 복숭아 와인 1병
-
-              <div class="close_button_content1" id="close_content1">&times;</div>
-            </div>
-
-            <br />
-            <div class="quantity_price_container">
-              <div class="quantity_container">
-                <button type="button" class="quantity_button_decrease">-</button>
-                <input type="text" id="quantity2" class="quantity_input" value="0" min="0" max="500">
-                <button type="button" class="quantity_button_increase">+</button>
-
-              </div>
-              <p><span class="sum_price"><span class="total_price">38000</span></span></p>
-              <br />
-            </div>
-          </div>
+          </label>
         </div>
 
+        <br />
 
+        <div class="price_details" id="content1" price-per-unit="33500">
+          <div class="content_reward" id="content_reward1"> [375ml] 고도리 복숭아 와인 1병
 
-          <div class="reward_item_price">
-            <label>
-              <input type="checkbox" class="show_content_checkbox product" data-target="content3"> 25,000원
-
-              <div class="reward_item_content">
-                <div class="reward_item_title">[375ml] 고도리 체리 와인 <span class="reward_item_max">최대 구매 가능 수량 500개</span>
-                </div>
-
-                <div class="reward_item_desciption">
-                  새콤달콤 체리향 가득한 디저트 와인
-                  #체리로 만든 와인 #디저트 와인
-                  <br />
-                  [375ml] 고도리 체리 와인 1병
-                </div>
-                <br />
-                <div class="reward_delivery">
-                  <span><i class="fa-solid fa-bus-simple"></i>배송비 3,000원</span>
-                  <span class="reward_delivery_divide"> | </span>
-                  <span>2023년 09월 중순 리워드 제공 예정</span>
-
-                </div>
-            </label>
+            <div class="close_button_content1" id="close_content1">&times;</div>
           </div>
-          <br />
 
-          <div class="price_details" id="content3" price-per-unit="25000">
-            <div class="content_reward" id="content_reward3">[375ml] 고도리 체리 와인
-              <div class="close_button_content1" id="close_content1">&times;</div>
+          <br />
+          <div class="quantity_price_container">
+            <div class="quantity_container">
+              <button type="button" class="quantity_button_decrease">-</button>
+              <input type="text" id="quantity1" class="quantity_input" value="0" min="0" max="500">
+              <button type="button" class="quantity_button_increase">+</button>
+
+            </div>
+            <p><span class="sum_price"> <span class="total_price">33500</span></span></p>
+            <br />
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="reward_item_price">
+        <label>
+          <input type="checkbox" class="show_content_checkbox product" data-target="content2"> 38,000 원
+
+          <div class="reward_item_content">
+            <div class="reward_item_title">[750ml] 고도리 복숭아 와인 1병 <span class="reward_item_max">최대 구매 가능 수량
+                500개</span></div>
+
+            <div class="reward_item_desciption">
+              뭐야? 주스가 아니라 술이였어? 고도리 복숭아 와인 대용량!
+              #복숭아로 만든 와인 #아이스 와인
+              <br />
+              [750ml] 고도리 복숭아 와인 1병
             </div>
             <br />
-            <div class="quantity_price_container">
-              <div class="quantity_container">
-                <button type="button" class="quantity_button_decrease">-</button>
-                <input type="text" id="quantity3" class="quantity_input" value="0" min="0" max="500">
-                <button type="button" class="quantity_button_increase">+</button>
+            <div class="reward_delivery">
+              <span><i class="fa-solid fa-bus-simple"></i>배송비 3,000원</span>
+              <span class="reward_delivery_divide"> | </span>
+              <span>2023년 09월 중순 리워드 제공 예정</span>
 
-              </div>
-              <p><span class="sum_price"> <span class="total_price">25000</span></span></p>
-              <br />
             </div>
+
+        </label>
+      </div>
+      <br />
+
+      <div class="price_details" id="content2" price-per-unit="38000">
+        <div class="content_reward" id="content_reward2">[750ml] 고도리 복숭아 와인 1병
+
+          <div class="close_button_content1" id="close_content1">&times;</div>
+        </div>
+
+        <br />
+        <div class="quantity_price_container">
+          <div class="quantity_container">
+            <button type="button" class="quantity_button_decrease">-</button>
+            <input type="text" id="quantity2" class="quantity_input" value="0" min="0" max="500">
+            <button type="button" class="quantity_button_increase">+</button>
+
           </div>
-
-
-
-          <div class="reward_item_price">
-            <label>
-              <input type="checkbox" class="show_content_checkbox product" data-target="content4"> 31,000 원
-
-              <div class="reward_item_content">
-                <div class="reward_item_title">[750ml] 고도리 체리 와인 1병 <span class="reward_item_max">최대 구매 가능 수량
-                    500개</span></div>
-
-                <div class="reward_item_desciption">
-                  새콤달콤 체리향 가득한 디저트 와인
-                  #체리로 만든 와인 #디저트 와인
-                  <br />
-                  [750ml] 고도리 체리 와인 1병
-                </div>
-                <br />
-                <div class="reward_delivery">
-                  <span><i class="fa-solid fa-bus-simple"></i>배송비 3,000원</span>
-                  <span class="reward_delivery_divide"> | </span>
-                  <span>2023년 09월 중순 리워드 제공 예정</span>
-
-                </div>
-            </label>
-          </div>
+          <p><span class="sum_price"><span class="total_price">38000</span></span></p>
           <br />
-
-          <div class="price_details" id="content4" price-per-unit="31000">
-            <div class="content_reward" id="content_reward4">[750ml] 고도리 체리 와인 1병
-              <div class="close_button_content1" id="close_content1">&times;</div>
-            </div>
-            <br />
-            <div class="quantity_price_container">
-              <div class="quantity_container">
-                <button type="button" class="quantity_button_decrease">-</button>
-                <input type="text" id="quantity4" class="quantity_input" value="0" min="0" max="500">
-                <button type="button" class="quantity_button_increase">+</button>
-
-              </div>
-              <p><span class="sum_price"> <span class="total_price">31000</span></span></p>
-              <br />
-            </div>
-          </div>
-
-
-        <div id="final_sum_price">'새콤달콤 주스같은 고도리 복숭아 와인 & 고도리 체리 와인'에 <span id="final_sum_price_detail">total-price의
-            합계</span> 원을 참여합니다.</div>
+        </div>
       </div>
     </div>
 
-    <button id="open_modal_button">다음 단계로 > </button>
+
+
+    <div class="reward_item_price">
+      <label>
+        <input type="checkbox" class="show_content_checkbox product" data-target="content3"> 25,000원
+
+        <div class="reward_item_content">
+          <div class="reward_item_title">[375ml] 고도리 체리 와인 <span class="reward_item_max">최대 구매 가능 수량 500개</span>
+          </div>
+
+          <div class="reward_item_desciption">
+            새콤달콤 체리향 가득한 디저트 와인
+            #체리로 만든 와인 #디저트 와인
+            <br />
+            [375ml] 고도리 체리 와인 1병
+          </div>
+          <br />
+          <div class="reward_delivery">
+            <span><i class="fa-solid fa-bus-simple"></i>배송비 3,000원</span>
+            <span class="reward_delivery_divide"> | </span>
+            <span>2023년 09월 중순 리워드 제공 예정</span>
+
+          </div>
+      </label>
+    </div>
+    <br />
+
+    <div class="price_details" id="content3" price-per-unit="25000">
+      <div class="content_reward" id="content_reward3">[375ml] 고도리 체리 와인
+        <div class="close_button_content1" id="close_content1">&times;</div>
+      </div>
+      <br />
+      <div class="quantity_price_container">
+        <div class="quantity_container">
+          <button type="button" class="quantity_button_decrease">-</button>
+          <input type="text" id="quantity3" class="quantity_input" value="0" min="0" max="500">
+          <button type="button" class="quantity_button_increase">+</button>
+
+        </div>
+        <p><span class="sum_price"> <span class="total_price">25000</span></span></p>
+        <br />
+      </div>
+    </div>
+
+
+
+    <div class="reward_item_price">
+      <label>
+        <input type="checkbox" class="show_content_checkbox product" data-target="content4"> 31,000 원
+
+        <div class="reward_item_content">
+          <div class="reward_item_title">[750ml] 고도리 체리 와인 1병 <span class="reward_item_max">최대 구매 가능 수량
+              500개</span></div>
+
+          <div class="reward_item_desciption">
+            새콤달콤 체리향 가득한 디저트 와인
+            #체리로 만든 와인 #디저트 와인
+            <br />
+            [750ml] 고도리 체리 와인 1병
+          </div>
+          <br />
+          <div class="reward_delivery">
+            <span><i class="fa-solid fa-bus-simple"></i>배송비 3,000원</span>
+            <span class="reward_delivery_divide"> | </span>
+            <span>2023년 09월 중순 리워드 제공 예정</span>
+
+          </div>
+      </label>
+    </div>
+    <br />
+
+    <div class="price_details" id="content4" price-per-unit="31000">
+      <div class="content_reward" id="content_reward4">[750ml] 고도리 체리 와인 1병
+        <div class="close_button_content1" id="close_content1">&times;</div>
+      </div>
+      <br />
+      <div class="quantity_price_container">
+        <div class="quantity_container">
+          <button type="button" class="quantity_button_decrease">-</button>
+          <input type="text" id="quantity4" class="quantity_input" value="0" min="0" max="500">
+          <button type="button" class="quantity_button_increase">+</button>
+
+        </div>
+        <p><span class="sum_price"> <span class="total_price">31000</span></span></p>
+        <br />
+      </div>
+    </div>
+
+
+    <div id="final_sum_price">'새콤달콤 주스같은 고도리 복숭아 와인 & 고도리 체리 와인'에 <span id="final_sum_price_detail">total-price의
+        합계</span> 원을 참여합니다.</div>
+  </div>
+  </div>
+
+  <button id="open_modal_button">다음 단계로 > </button>
   </div>
   <div class="modal" id="modal">
     <div class="modal_content">
@@ -370,8 +372,9 @@
         </div>
         </label>
         <br />
+        <a href="../60_funding/72_fundingPayment.html"><button type="button" id="check_nextpage">계속해서 진행하기</button></a>
       </div>
-      <a href="../60_funding/72_fundingPayment.html"><button type="button" id="check_nextpage">계속해서 진행하기</button></a>
+
 
     </div>
   </div>

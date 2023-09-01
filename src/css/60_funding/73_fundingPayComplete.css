@@ -94,7 +94,7 @@
 
 
 .wrap_fundingPay .funding_complete_info{
-  margin-left: 100px;
+  margin-left: 28%;
 }
 
 .wrap_fundingPay .funding_complete_content_all {
@@ -117,7 +117,7 @@
 }
 
 .wrap_fundingPay #p_return_main{
-  width: 300px;
+  width: 200px;
   height: 50px;
   border: none;
   background-color: #00b7d4;
@@ -125,8 +125,37 @@
   border-radius: 10px;
   font-size: 20px;
   margin-top: 10px;
-  margin-left: 26%;
+  margin-right: 100px;
 }
+
+.wrap_fundingPay #p_detail{
+  width: 200px;
+  height: 50px;
+  border: 1px solid #00b7d4;
+  color: #00b7d4;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 100px;
+}
+
+.wrap_fundingPay .button-container {
+  display: flex; /* Flexbox 컨테이너 설정 */
+  
+}
+
+
+
+.slider {
+  width: 300px;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+
 /* 768px 이하인 경우에만 적용되는 스타일 */
 @media (max-width: 768px) {
   #header {

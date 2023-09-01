@@ -121,19 +121,22 @@ input[type="checkbox"]:checked {
 input[type="checkbox"]:checked::before {
   content: "\2714"; /* 체크 표시 문자 */
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   line-height: 17px;
   text-align: center;
   color: white; /* 흰색으로 설정 */
+  /*체크표시 위치변경*/
+  position: relative;
+  top: -5px;
 }
 
 /* 체크하지 않았을 때의 체크 표시 */
 input[type="checkbox"]::before {
   content: "";
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   line-height: 17px;
   text-align: center;
   color: transparent;
@@ -216,6 +219,9 @@ input[type="radio"]:checked::before {
   line-height: 17px;
   text-align: center;
   color: white; /* 흰색으로 설정 */
+  /*체크표시 위치변경*/
+  position: relative;
+  top: -4px;
 }
 
 /* 체크하지 않았을 때의 체크 표시 */
@@ -269,6 +275,22 @@ input[type="radio"]::before {
   padding: 20px;
 }
 
+
+#point_input,#delivery_name_value, #delivery_tel_value, #address_number{
+  border: 1px solid rgba(0, 0, 0, 0.300);
+  border-radius: 3px;
+  padding: 2px;
+  margin: 1px 0px;
+}
+
+#delivery_address_detail, #delivery_address_value, #delivery_request_value{
+  border: 1px solid rgba(0, 0, 0, 0.300);
+  border-radius: 3px;
+  padding: 2px;
+  margin: 2px 0px;
+  width: 300px;
+}
+
   /* 버튼 컨테이너 */
   .center-container {
     display: flex;
@@ -288,10 +310,24 @@ input[type="radio"]::before {
     font-size: 18px;
   }
 
+  #pay_purchase_final:hover {
+    width: 200px;
+    height: 40px;
+    background-color: #01a4bd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+  }
+
 
   /* 768px 이하인 경우에만 적용되는 스타일 */
 @media (max-width: 768px) {
   #header {
+    display: none;
+  }
+
+  #purchase_wrap{
     display: none;
   }
 }
