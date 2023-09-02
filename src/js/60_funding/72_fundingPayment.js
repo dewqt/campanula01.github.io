@@ -26,21 +26,57 @@ $(function() {
   }
     //prop메서드는 요소의 속성값을 가져오거자 설정하는데 사용 요소의 property값을 조작하거나 검사할 때 사용. 
     //체크박스의 체크여부, 라디오 버튼의 선택여부, 입력필드의 비활성화 등.
-    $("#check_all").click(function() {
-        if ($("#check_all").is(":checked")) $("input[name=check]").prop("checked", true);
-        else $("input[name=check]").prop("checked", false);
-        $("#pay_purchase_final").prop("disabled", !this.checked);
-    });
+  // "전체 동의" 체크박스의 상태가 변경될 때
+  $("#check_all").click(function() {
+    // "전체 동의" 체크박스의 상태에 따라 개별 동의 체크박스들의 상태를 설정
+    $("input[name=check]").prop("checked", $(this).is(":checked"));
+    updatePayButtonState();
+  });
 
-    $("input[name=check]").click(function() {
-        var total = $("input[name=check]").length;  //length는 jquery 객체의 요소 개수, size도 요소의 개수를 반환 하지만 1.8버전부터 제외됨.
-        var checked = $("input[name=check]:checked").length;
+  // 개별 동의 체크박스들의 상태가 변경될 때
+  $("input[name=check]").click(function() {
+    updatePayButtonState();
+  });
 
-        if (total !== checked) $("#check_all").prop("checked", false);
-        else $("#check_all").prop("checked", true); 
-        $("#pay_purchase_final").prop("disabled", !this.checked);
-    });
+  // "결제하기" 버튼 상태를 업데이트하는 함수
+  function updatePayButtonState() {
+    var total = $("input[name=check]").length;
+    var checked = $("input[name=check]:checked").length;
 
+    // 모든 개별 동의 체크박스가 선택되었을 때 "결제하기" 버튼을 활성화
+    if (total === checked) {
+     
+      $("#check_all").prop("checked", true);
+    } else {
+      
+      $("#check_all").prop("checked", false);
+      
+    }
+  }
+
+  // 초기 페이지 로드시 "결제하기" 버튼 상태를 업데이트
+  updatePayButtonState();
+
+
+  $("#pay_purchase_final").click(function(e) {
+    if (!$("#check_all").is(":checked")) {
+      e.preventDefault(); // 약관에 동의하지 않은 경우 클릭 이벤트 막기
+  
+      Swal.fire({
+        icon: 'error',
+        text: '약관 동의를 진행해 주세요.',
+        confirmButtonColor: '#00b7d4',
+        cutomClass: {
+          text: 'pay_purchase_alert',
+          container: 'pay_purchase_alert'
+        }
+      });
+  
+    }
+  });
+  
 
 
 });
+
+

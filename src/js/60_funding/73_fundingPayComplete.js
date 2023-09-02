@@ -21,14 +21,16 @@ $(function() {
     requestAnimationFrame(animate);
 
     $(".slides").slick({
-      infinite: true,
-      slidesToShow: 1,
+      infinite: false,
+      slidesToShow: 5,
       slidesToScroll: 1,
-      prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-      nextArrow: '<button type="button" class="slick-next">Next</button>',
+      prevArrow: '<button type="button" class="slick-prev"><</button>',
+      nextArrow: '<button type="button" class="slick-next">></button>',
       vertical: false, // 가로 슬라이드 설정
-      verticalSwiping: false // 가로 슬라이드 설정
+      verticalSwiping: false, // 가로 슬라이드 설정
+
     });
+    
 
 
   });

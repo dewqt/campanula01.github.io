@@ -3,14 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="widivh=device-widivh, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>리워드결제</title>
   <script src="../src/js/00_common/jquery-3.7.0.min.js"></script>
   <script src="../src/js/00_common/jquery-1.12.4.min.js"></script>
   <link rel="stylesheet" href="../src/css/60_funding/72_fundingPayment.css">
   <script src="../src/js/60_funding/72_fundingPayment.js"></script>
   <script src="https://kit.fontawesome.com/312ff11b0d.js" crossorigin="anonymous"></script>
-  <script type="text/javascript">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
+  <script href="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ 
+ <script type="text/javascript">
     $(function () {
       var includes1 = $('[data-include1="header"]');
       $.each(includes1, function () {
@@ -140,7 +144,7 @@
                 </div>
               </div>
             </div>
-            <div class="divide_place"></div>
+
 
             <div class="delivery_wrap">
               <div class="supporter_info">
@@ -208,7 +212,7 @@
                 </div>
               </div>
             </div>
-            <div class="divide_place"></div>
+
 
             <div class="pay_purchase">
               <div class="pay_purchase_title">예약 결제</div>
@@ -230,7 +234,7 @@
               </label>
 
             </div>
-            <div class="divide_place"></div>
+
             <div class="purchase_caution">
               <div id="purchase_caution_title">
                 결제 유의사항
@@ -243,7 +247,7 @@
               </div>
             </div>
 
-            <div class="divide_place"></div>
+
 
             <div class="purchase_agree">
               <div class="purchase_agree_title">
@@ -299,7 +303,7 @@
           </div>
           <div class="center-container">
             <a href="../60_funding/73_fundingPayComplete.html"><button type="button"
-                id="pay_purchase_final" disabled>결제하기</button></a>
+                id="pay_purchase_final">결제하기</button></a>
           </div>
         </div>
     </div>

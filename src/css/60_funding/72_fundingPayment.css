@@ -1,32 +1,32 @@
-.purchase_title {
+.wrap_fundingPay .purchase_title {
   background-color: black;
   text-align: center;
   color: white;
   padding: 10px;
 }
-ul{
+.wrap_fundingPay ul{
   list-style: none;
 }
-.text{
+.wrap_fundingPay .text{
   font-size: 12px;
   color: gray;
 }
-#form_all{
+.wrap_fundingPay #form_all{
   margin: 0 auto;
   width: 800px;
 }
 
 /*원*/
-#purchase_wrap {
+.wrap_fundingPay #purchase_wrap {
   padding: 30px;
   position: relative;
 }
 
-#purchase_step {
+.wrap_fundingPay #purchase_step {
   position: relative;
 }
 
-.container {
+.wrap_fundingPay .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,14 +34,14 @@ ul{
   left: 30%;
 }
 
-.circle_container {
+.wrap_fundingPay .circle_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
 
-.circle {
+.wrap_fundingPay .circle {
   width: 100px;
   height: 100px;
   background-color: #96dcf0;
@@ -55,7 +55,7 @@ ul{
   z-index: 1;
 }
 
-.circle_selected {
+.wrap_fundingPay .circle_selected {
   width: 100px;
   height: 100px;
   background-color: #96dcf0;
@@ -70,13 +70,13 @@ ul{
   background-color: #00b7d4;
 }
 
-.word {
+.wrap_fundingPay .word {
   color: white;
   text-align: center;
   margin-top: 5px;
 }
 
-.connector {
+.wrap_fundingPay .connector {
   position: absolute;
   width: 400px;
   height: 1px;
@@ -84,7 +84,7 @@ ul{
   left: calc(50% - 200px);
 }
 
-.connector::before {
+.wrap_fundingPay .connector::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -98,7 +98,7 @@ ul{
 
 
 /*체크박스*/
-input[type="checkbox"] {
+.wrap_fundingPay input[type="checkbox"] {
   /* 기본 체크박스 스타일 제거 */
   appearance: none;
   -webkit-appearance: none;
@@ -113,12 +113,12 @@ input[type="checkbox"] {
 }
 
 /* 체크된 상태의 스타일 */
-input[type="checkbox"]:checked {
+.wrap_fundingPay input[type="checkbox"]:checked {
   background-color: #00b7d4; /* 체크한 경우 배경을 변수 색상으로 설정 */
 }
 
 /* 체크된 상태에서의 체크 표시 */
-input[type="checkbox"]:checked::before {
+.wrap_fundingPay input[type="checkbox"]:checked::before {
   content: "\2714"; /* 체크 표시 문자 */
   display: inline-block;
   width: 18px;
@@ -132,7 +132,7 @@ input[type="checkbox"]:checked::before {
 }
 
 /* 체크하지 않았을 때의 체크 표시 */
-input[type="checkbox"]::before {
+.wrap_fundingPay input[type="checkbox"]::before {
   content: "";
   display: inline-block;
   width: 18px;
@@ -142,28 +142,32 @@ input[type="checkbox"]::before {
   color: transparent;
 }
 
-#point_input{
+.wrap_fundingPay #point_input{
   color: #00b7d4;
 }
 
-.sum{
+.wrap_fundingPay .sum{
   text-align: right;
 }
 
+.wrap_fundingPay #reward_funding_price{
+  padding: 10px 0px;
+  border-bottom:  10px solid #00b8d40d;
+}
 
-.orader_add_info dl {
+.wrap_fundingPay .orader_add_info dl {
   display: flex;
   flex-wrap: wrap;
 }
 
-.orader_add_info dt,
-.orader_add_info dd {
+.wrap_fundingPay .orader_add_info dt,
+.wrap_fundingPay .orader_add_info dd {
   flex: 0 0 50%; /* 두 개의 요소를 가로로 나란히 배치 */
   width: 200px;
   padding: 5px;
 }
 
-.right_aligned {
+.wrap_fundingPay .right_aligned {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -171,19 +175,21 @@ input[type="checkbox"]::before {
 }
 
 
-.delivery_wrap {
+.wrap_fundingPay .delivery_wrap {
   display: flex;
   flex-direction: row;
+  padding: 10px 0px;
+  border-bottom:  10px solid #00b8d40d;
 }
 
-.supporter_info {
+.wrap_fundingPay .supporter_info {
   background-color: #96dcf05e;
   border-radius: 30px;
   padding: 20px;
   width: 250px;
 }
 
-.delivery {
+.wrap_fundingPay .delivery {
   background-color: white;
   border-radius: 30px;
   margin-left: auto;
@@ -191,7 +197,7 @@ input[type="checkbox"]::before {
 }
 
 
-input[type="radio"] {
+.wrap_fundingPay input[type="radio"] {
   /* 기본 체크박스 스타일 제거 */
   appearance: none;
   -webkit-appearance: none;
@@ -206,12 +212,12 @@ input[type="radio"] {
 }
 
 /* 체크된 상태의 스타일 */
-input[type="radio"]:checked {
+.wrap_fundingPay input[type="radio"]:checked {
   background-color: #00b7d4; /* 체크한 경우 배경을 변수 색상으로 설정 */
 }
 
 /* 체크된 상태에서의 체크 표시 */
-input[type="radio"]:checked::before {
+.wrap_fundingPay input[type="radio"]:checked::before {
   content: "\2714"; /* 체크 표시 문자 */
   display: inline-block;
   width: 17px;
@@ -225,7 +231,7 @@ input[type="radio"]:checked::before {
 }
 
 /* 체크하지 않았을 때의 체크 표시 */
-input[type="radio"]::before {
+.wrap_fundingPay input[type="radio"]::before {
   content: "";
   display: inline-block;
   width: 17px;
@@ -235,18 +241,18 @@ input[type="radio"]::before {
   color: transparent;
 }
 
-#supporter_title, #supporter_name, #supporter_email, #supporter_tel{
+.wrap_fundingPay #supporter_title,.wrap_fundingPay #supporter_name, .wrap_fundingPay #supporter_email, .wrap_fundingPay #supporter_tel{
   margin: 20px 0px;
   padding-bottom: 5px;
   border-bottom: 1px solid #00000011;
 }
 
-#supporter_name_default, #supporter_email_default, #supporter_tel_default{
+.wrap_fundingPay #supporter_name_default, .wrap_fundingPay #supporter_email_default, .wrap_fundingPay #supporter_tel_default{
   margin-bottom: 5px;
   color: #00b7d4;
 }
 
-#delivery_address_search{
+.wrap_fundingPay #delivery_address_search{
   background-color: #00b7d4;
   color: white;
   border: none;
@@ -254,7 +260,7 @@ input[type="radio"]::before {
   width: 100px;
   height: 30px;
 }
-.divide_place{
+.wrap_fundingPay .divide_place{
   width: 100%;
   height: 10px;
   background-color: #00b8d40d;
@@ -262,13 +268,18 @@ input[type="radio"]::before {
 
 }
 
-#purchase_caution_title, .purchase_agree_title, .pay_purchase_title{
+.wrap_fundingPay #purchase_caution_title, .wrap_fundingPay .purchase_agree_title, .wrap_fundingPay .pay_purchase_title{
   font-size: 16px;
   font-weight: bold;
   margin: 15px;
 }
 
-#purchase_caution_content{
+.wrap_fundingPay .pay_purchase, .wrap_fundingPay .purchase_caution{
+  padding: 10px 0px;
+  border-bottom:  10px solid #00b8d40d;
+}  
+
+.wrap_fundingPay #purchase_caution_content{
   margin: 10px;
   background-color: rgba(128, 128, 128, 0.189);
   border-radius: 10px;
@@ -276,14 +287,14 @@ input[type="radio"]::before {
 }
 
 
-#point_input,#delivery_name_value, #delivery_tel_value, #address_number{
+.wrap_fundingPay #point_input,.wrap_fundingPay #delivery_name_value, .wrap_fundingPay #delivery_tel_value, .wrap_fundingPay #address_number{
   border: 1px solid rgba(0, 0, 0, 0.300);
   border-radius: 3px;
   padding: 2px;
   margin: 1px 0px;
 }
 
-#delivery_address_detail, #delivery_address_value, #delivery_request_value{
+.wrap_fundingPay #delivery_address_detail, .wrap_fundingPay #delivery_address_value, .wrap_fundingPay #delivery_request_value{
   border: 1px solid rgba(0, 0, 0, 0.300);
   border-radius: 3px;
   padding: 2px;
@@ -292,7 +303,7 @@ input[type="radio"]::before {
 }
 
   /* 버튼 컨테이너 */
-  .center-container {
+  .wrap_fundingPay .center-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,7 +311,7 @@ input[type="radio"]::before {
   }
 
   /* 버튼 스타일 */
-  #pay_purchase_final {
+  .wrap_fundingPay #pay_purchase_final {
     width: 200px;
     height: 40px;
     background-color: #00b7d4;
@@ -310,7 +321,7 @@ input[type="radio"]::before {
     font-size: 18px;
   }
 
-  #pay_purchase_final:hover {
+  .wrap_fundingPay #pay_purchase_final:hover {
     width: 200px;
     height: 40px;
     background-color: #01a4bd;
@@ -321,13 +332,14 @@ input[type="radio"]::before {
   }
 
 
+
   /* 768px 이하인 경우에만 적용되는 스타일 */
 @media (max-width: 768px) {
-  #header {
+  .wrap_fundingPay #header {
     display: none;
   }
 
-  #purchase_wrap{
+  .wrap_fundingPay #purchase_wrap{
     display: none;
   }
 }

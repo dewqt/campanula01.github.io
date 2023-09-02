@@ -386,20 +386,24 @@
   color: white;
 }
 
+.wrap_fundingPay #check_nextpage.active:hover {
+  background-color: #01a4bd;
+  color: white;
+}
 
 
 /* 768px 이하인 경우에만 적용되는 스타일 */
 @media (max-width: 970px) {
-   #header {
+  .wrap_fundingPay #header {
     display: none;
   }
 
-   .purchase_title{
+  .wrap_fundingPay .purchase_title{
     height: 50px;
     font-size: 20px;
   }
 
-   #reward_content_box{
+  .wrap_fundingPay #reward_content_box{
     margin-left: 0%;
   }
   .wrap_fundingPay .modal_content {
