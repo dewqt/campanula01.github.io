@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/312ff11b0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="../src/js/00_common/jquery-3.7.0.min.js"></script>
+    <script src="../src/js/00_common/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../src/css/00_common/common.css">
+    <link rel="stylesheet" href="../src/css/00_common/header.css">
+    <link rel="stylesheet" href="../src/css/30_supporter/26_soolLike.css">
+    <link rel="stylesheet" href="../src/css/00_common/aside.css">
+    <script src="../src/js/30_supporter/26_soolLike.js"></script>
+    <script type="text/javascript">
+        $(function(){
+          var includes1 = $('[data-include1="header"]');
+          
+          $.each(includes1, function(){
+             $(this).load('../00_common/01_header.html');
+          });
+          
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+      <div data-include1="header" id="header"></div>
+      <div class="wrap_center wrap_myinfo">
+        <aside class="main_aside" id="wrap_aside">
+            <div class="user_img"></div>
+            <p class="user_id"><a href="../10_member/19_pwConfirm.html">사용자 아이디 &gt;</a></p>
+
+            <p class="question"><a href="../10_member/22_questionList.html">문의 내역</a></p>
+            <div class="support_form">
+                <p class="support_p smp"> 서포트</p>
+                <ul class="support_ul">
+                    <li class="support_li1 li_style"><a href="24_orderList.html">주문 내역</a></li>
+                    <li class="support_li2 li_style"><a href="26_soolLike.html">관심 프로젝트</a></li>
+                </ul>
+            </div>
+           
+            <div class="maker_form">
+                <p class="maker_p smp">메이커</p>
+                <ul class="maker_ul">
+                    <li class="maker_li1 li_style"><a href="../40_project/01_projectList.html">내 프로젝트</a></li>
+                    <li class="maker_li2 li_style"><a href="../60_funding/03_projectSellinglist.html">판매현황</a></li>
+                </ul>
+            </div>
+
+        </aside>
+        <section class="main_section">
+            <div class="like_top">
+           <span class="like_title">관심 프로젝트</span>
+           
+            <select name="" id="soolLike_select"  class="soolLike_select">
+                <option value="전체" selected>전체</option>
+                <option value="진행예정">진행예정</option>
+                <option value="진행중">진행중</option>
+                <option value="진행종료">진행종료</option>
+            </select>
+           
+        </div>
+          <!--
+            페이지 처리 필요한 파라미터
+            select 필요한 필드
+            from(
+                select /*+ INDEX_DESC(spring_board spring_board_pk)*/
+                        rownnum as rnum, b_num, b_name, b_title, b_date
+                from spring_board
+                where rownum <= pageNum * amount
+                )boardlist
+            where rnum >(pageNum-1)*amount;
+
+
+            페이징 참고
+            	<div class="text-center">
+			<ul class="pagination">
+			
+				<c:if test="${pageMaker.prev}">
+					<li class="paginate_button previous">
+						<a href="${pageMaker.startPage -1}">Previous</a>
+					</li>
+				</c:if>
+				
+				<c:forEach var="num" begin="${pageMaker.startPage}" end="${pageMaker.endPage}">
+					<li class="paginate_button ${pageMaker.cvo.pageNum == num ? 'active' : '' }">
+						<a href="${num}">${num}</a>
+					</li>
+				</c:forEach>
+				
+				<c:if test = "${pageMaker.next}">
+					<li class="paginate_button next">
+						<a href="${pageMaker.endPage + 1 }">Next</a>
+					</li>
+				</c:if>
+			</ul>
+		</div>
+
+
+            리스트 출력 참고
+            <div id="boardList" class="table-height">
+			<table summary = "게시판 리스트" class="table table-striped">
+				<thead>
+					<tr>
+						<th data-value="b-num" class="order text-center col-md-1" >글번호</th>
+						<th class="text-center col-md-4">글제목</th>
+						<th class="text-center col-md-2">작성자</th>
+						<th data-value ="b_date" class="order col-md-1">작성일</th>
+						<th class="text-center col-md-1">조회수</th>
+					</tr>
+				</thead>
+				<tbody id="list" class="table-striped">
+					
+					<c:choose>
+						<c:when test="${not empty boardList }">
+							<c:forEach var="board" items="${boardList }" varStatus="status">
+								<tr class="text-center" data-num="${board.b_num }">
+									<td>${board.b_num }</td>
+									<td class="goDetail text-left">${board.b_title}</td>
+									<td class="name">${board.b_name }</td>
+									<td class="text-left">${board.b_date }</td>
+									<td class="text-center">${board.readcnt}</td>
+								</tr>
+							</c:forEach>	
+						</c:when>
+						<c:otherwise>
+							<tr>
+								<td colspan="5" class="tac text-center">등록된 게시글이 존재하지 않습니다.</td>
+							</tr>
+						</c:otherwise>
+					</c:choose>
+				</tbody>
+			</table>
+		
+		
+		</div>
+            -->
+
+
+
+
+                        
+                
+        <div class="flex_wrap"> 
+            <div class="slider">
+              <a href="#">
+                <div class="slider_div">
+             <div class="likeempty">
+                  <i class="fa-regular fa-heart" ></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div> 
+                <img src="../src/img/00_common/sample_1.jpg" alt="" class="simg">
+                <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
+                <p class="gap"></p>
+                <div class="price">50,000원</div>
+                <div class="hr"></div>
+                
+                <ul class="tage">
+                  <li>#전통주 소물리에PICK</li>
+                  <li>#전통주 입문자 용</li>
+                </ul>
+                <span class="gauge" per="95"></span>
+                </div>
+              </a>
+            </div>
+              
+              
+              <div class="slider">
+                <a href="#">
+                <div class="slider_div">
+               <div class="likeempty">
+                  <i class="fa-regular fa-heart" ></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div> 
+                <img src="../src/img/00_common/sample_2.jpg" alt="" class="simg">
+                <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
+                <p class="gap"></p>
+                <div class="price">50,000원</div>
+                <div class="hr"></div>
+                
+                <ul class="tage">
+                  <li>#전통주 소물리에PICK</li>
+                  <li>#전통주 입문자 용</li>
+                </ul>
+          
+                <span class="gauge" per="95"></span>
+              </div>
+            </a>  
+            </div>
+              
+              <div class="slider">
+                <a href="#">
+                <div class="slider_div">
+                <div class="likeempty">
+                  <i class="fa-regular fa-heart" ></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div> 
+                <img src="../src/img/00_common/sample_3.jpg" alt="" class="simg">
+                <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
+                <p class="gap"></p>
+                <div class="price">50,000원</div>
+                <div class="hr"></div>
+                
+                <ul class="tage">
+                  <li>#전통주 소물리에PICK</li>
+                  <li>#전통주 입문자 용</li>
+                </ul>
+          
+                <span class="gauge" per="95"></span>
+              </div> 
+            </a> 
+            </div>
+              
+              <div class="slider">
+                <a href="#">
+              <div class="slider_div">
+                 <div class="likeempty">
+                  <i class="fa-regular fa-heart" ></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="../src/img/00_common/sample_4.jpg" alt="" class="simg">
+                <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
+                <p class="gap"></p>
+                <div class="price">50,000원</div>
+                <div class="hr"></div>
+                
+                <ul class="tage">
+                  <li>#전통주 소물리에PICK</li>
+                  <li>#전통주 입문자 용</li>
+                </ul>
+          
+                <span class="gauge" per="95"></span>
+              </div>  
+            </a>
+            </div>
+              
+              <div class="slider">
+                <a href="#">
+                <div class="slider_div">
+                 <div class="likeempty">
+                  <i class="fa-regular fa-heart" ></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div> 
+                <img src="../src/img/00_common/sample_5.jpg" alt="" class="simg">
+                <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
+                <p class="gap"></p>
+                <div class="price">50,000원</div>
+                <div class="hr"></div>
+                
+                <ul class="tage">
+                  <li>#전통주 소물리에PICK</li>
+                  <li>#전통주 입문자 용</li>
+                </ul>
+          
+                <span class="gauge" per="95"></span>
+              </div> 
+            </a>
+            </div>
+
+              <div class="slider">
+                <a href="#">
+                <div class="slider_div">
+                 <div class="likeempty">
+                  <i class="fa-regular fa-heart" ></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div> 
+                <img src="../src/img/00_common/sample_5.jpg" alt="" class="simg">
+                <div class="subject">안녕하세요.안녕하세요.안녕하세요.안녕하세요</div>
+                <p class="gap"></p>
+                <div class="price">50,000원</div>
+                <div class="hr"></div>
+                
+                <ul class="tage">
+                  <li>#전통주 소물리에PICK</li>
+                  <li>#전통주 입문자 용</li>
+                </ul>
+          
+                <span class="gauge" per="95"></span>
+              </div>
+            </div>
+          </a>
+        </div>
+    </div>
+        </section>
+
+
+
+    </div>
+</div>
+
+</body>
+</html>
