@@ -8,9 +8,6 @@
   font-style: normal;
 }
 
-
-
-
 #wrap_header {
   width: 100%;
   height: 40px;
@@ -47,7 +44,8 @@ cursor: pointer;
 
 #wrap_header_right{
   position: absolute;
-  right:0;display: flex; 
+  right:40px;
+  display: flex; 
   flex-direction:row
 }
 
@@ -124,6 +122,7 @@ cursor: pointer;
   border-radius: 4px;
   z-index: 1200;
   padding:15px 10px;
+  display:none;
   
 }
 #wrap_mypage a{
@@ -138,7 +137,7 @@ cursor: pointer;
   justify-content: flex-start;
   font-size: 14px;
   line-height: 22px;
-  color: rgb(13, 13, 13);
+  /*color: rgb(13, 13, 13);*/
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
 }
