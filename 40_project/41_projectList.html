@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/312ff11b0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="../src/js/00_common/jquery-3.7.0.min.js"></script>
+    <script src="../src/js/00_common/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../src/css/00_common/common.css">
+    <link rel="stylesheet" href="../src/css/00_common/header.css">
+    <link rel="stylesheet" href="../src/css/40_project/41_projectList.css">
+    <link rel="stylesheet" href="../src/css/10_member/25_oderListDetail.css">
+    <link rel="stylesheet" href="../src/css/00_common/aside.css">
+    <script src="../src/js/30_supporter/25_orderListDetail.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var includes1 = $('[data-include1="header"]');
+
+            $.each(includes1, function () {
+                $(this).load('../00_common/01_header.html');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div data-include1="header" id="header"></div>
+        <div class="wrap_center wrap_myinfo">
+            <aside class="main_aside" id="wrap_aside">
+                <div class="user_img"></div>
+                <p class="user_id"><a href="../10_member/19_pwConfirm.html">사용자 아이디 &gt;</a></p>
+
+                <p class="question"><a href="../10_member/22_questionList.html">문의 내역</a></p>
+                <div class="support_form">
+                    <p class="support_p smp"> 서포트</p>
+                    <ul class="support_ul">
+                        <li class="support_li1 li_style"><a href="../30_supporter/24_orderList.html">주문 내역</a></li>
+                        <li class="support_li2 li_style"><a href="../30_supporter/26_soolLike.html">관심 프로젝트</a></li>
+                    </ul>
+                </div>
+
+                <div class="maker_form">
+                    <p class="maker_p smp">메이커</p>
+                    <ul class="maker_ul">
+                        <li class="maker_li1 li_style"><a href="01_projectList.html">내 프로젝트</a></li>
+                        <li class="maker_li2 li_style"><a href="../60_funding/03_projectSellinglist.html">판매현황</a></li>
+                    </ul>
+                </div>
+
+            </aside>
+            <section class="main_section">
+                <div class="wrap_my_project">
+                    <h1 class="title">내 프로젝트</h1><br />
+                    <div class="project_status_select">
+                        <input type="button" class="project_status_all" value="전체">
+                        <input type="button" class="project_status_writing" value="작성중">
+                        <input type="button" class="project_status_reviewing" value="심사중">
+                        <input type="button" class="project_status_permission" value="승인됨">
+                        <input type="button" class="project_status_return" value="반려됨">
+                        <input type="button" class="project_status_openWaiting" value="공개예정">
+                        <input type="button" class="project_status_ongoing" value="진행중">
+                        <input type="button" class="project_status_end" value="종료">
+                    </div>
+                    <div class="project_status">
+                        <p>'프로젝트 상태값' <span class="my_project_count">'플젝 갯수'</span></p>
+                    </div>
+                    <div class="wrap_project_list">
+                        <div class="thumbnail_image">
+                            <img class="project_thumbnail_image" src="../src/img/00_common/sample_2.jpg" alt="projet_image">
+                        </div>
+                        <div class="project_package">
+                            <p class="project_thumbnail_status"><span>작성중</span></p>
+                            <p class="project_thumbnail_title">프로젝트 제목</p>
+                            <p class="project_thumbnail_content">프로젝트 설명 </p>
+                        </div>
+                        <div class="project_controll">
+                            <div class="projectUpdate"><button type="button" class="projectUpdateBtn">관리</button></div>
+                            <div class="projectDelete"><button type="button" class="projectDeleteBtn">삭제</button></div>
+                        </div>
+                    </div>
+
+                    <div class="wrap_project_list">
+                        <div class="thumbnail_image">
+                            <img class="project_thumbnail_image" src="../src/img/00_common/sample_1.jpg" alt="projet_image">
+                        </div>
+                        <div class="project_package">
+                            <p class="project_thumbnail_status"><span>작성중</span></p>
+                            <p class="project_thumbnail_title">프로젝트 제목</p>
+                            <p class="project_thumbnail_content">프로젝트 설명 </p>
+                        </div>
+                        <div class="project_controll">
+                            <div class="projectUpdate"><button type="button" class="projectUpdateBtn">관리</button></div>
+                            <div class="projectDelete"><button type="button" class="projectDeleteBtn">삭제</button></div>
+                        </div>
+                    </div>
+
+                    <div class="wrap_project_list">
+                        <div class="thumbnail_image">
+                            <img class="project_thumbnail_image" src="../src/img/00_common/sample_3.jpg" alt="projet_image">
+                        </div>
+                        <div class="project_package">
+                            <p class="project_thumbnail_status"><span>작성중</span></p>
+                            <p class="project_thumbnail_title">프로젝트 제목</p>
+                            <p class="project_thumbnail_content">프로젝트 설명 </p>
+                        </div>
+                        <div class="project_controll">
+                            <div class="projectUpdate"><button type="button" class="projectUpdateBtn">관리</button></div>
+                            <div class="projectDelete"><button type="button" class="projectDeleteBtn">삭제</button></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
