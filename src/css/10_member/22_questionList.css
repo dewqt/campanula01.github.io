@@ -1,0 +1,41 @@
+
+
+.my_btn_list{
+    margin-top:100px;
+    margin-bottom: 35px;
+}
+
+.que_box{
+    display: inline-block;
+    width: 105px;
+    height: 35px;
+    line-height: 35px;
+   
+    text-align: center;
+    font-size: 15px;
+    margin-right:10px;
+}
+
+.que_box a{
+    display: inline-block;
+    width: 100%;
+}
+
+.my_que{
+    background-color: #96dcf0;
+}
+.try_que{
+    background-color: #ddd;
+}
+
+.que_text{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.que_back{
+    margin-top:20px;
+    width: 90%;
+    height: 800px;
+    background-color: #96dcf0;
+}
