@@ -21,22 +21,191 @@
     <link rel="stylesheet" href="../src/css/00_common/common.css"> 
 </head>
 <body>
+    <style>
+        .index_top{margin:20px auto;text-align:center;}
+        .index_top img{display: inline;}
+        table{width:100%;}
+        th,td{line-height:20px;height:20px;}
+        th{border-bottom:1px solid #999999;font-weight: normal;border-top:1px solid #999999;}
+        th~th{border-left:1px solid #e0e0e0;}
+        td{border-bottom:1px solid #e0e0e0;border-left:1px solid #e0e0e0;}
+        td.non_left{border-left:none;border-bottom:1px solid #999999;}
+        .per100{background-color:#afafaf;}
+        .per50{background-color:#d6d4d4;}
+        .divid_end td{border-bottom:1px solid #999999;}
+    </style>
+    <div class="wrap_center">
     
+        <div class="index_top"><img src="src/img/00_common/logo.png"/></div>
     
-    <div data-include1="header" id="header"></div>
 
-    <table>
-        <thead>
-            <th>depth1</th>
-            <th>depth2</th>
-            <th>path</th>
-        </thead>
-        <tbody>
-            <td>60_funding</td>
-            <td>결제</td>
-            <td><a href="60_funding/72_fundingPayment.html" target="_blank">72_fundingPayment.html</a></td>
-        </tbody>
-    </table>
+        <table>
+            <colgroup>
+                <col width="20%"/>
+                <col width="20%"/>
+                <col width="40%"/>
+                <col width="20%"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>depth1</th>
+                    <th>depth2</th>
+                    <th>path</th>
+                    <th>status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--s:common-->
+                <tr>
+                    <td rowspan="3" class="non_left">common(00)</td>
+                    <td>헤더</td>
+                    <td><a href="#" target="_blank">01_header.html</a></td>
+                    <td class="per100">100%</td>
+                </tr>
+                <tr>
+                    <td>풋터</td>
+                    <td><a href="#" target="_blank">02_footer.html</a></td>
+                    <td class="per50">50%</td>
+                </tr>
+                <tr class="divid_end">
+                    <td>팝업</td>
+                    <td><a href="#" target="_blank">03_pop.html</a></td>
+                    <td class="">0</td>
+                </tr>
+                <!--e:common-->
+
+                <!--s:main-->
+                <tr class="divid_end non_left">
+                    <td>Main</td>
+                    <td></td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <!--e:main-->
+
+                <!--s:member-->
+                <tr>
+                    <td rowspan="10" class="non_left">member(10)</td>
+                    <td>일반로그인</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr>
+                    <td>회원가입</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr>
+                    <td>카카오 로그인</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr>
+                    <td>카카오 회원가입</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr>
+                    <td>공통페이지 </td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr>
+                    <td>비밀번호확인 </td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr>
+                    <td>내 정보관리</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr>
+                    <td>술고래 포인트</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr>
+                    <td>내 문의조회</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr class="divid_end">
+                    <td>문의등록 </td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <!--e:member-->
+
+                <!--s:supporter-->
+                <tr>
+                    <td rowspan="3" class="non_left">supporter(30)</td>
+                    <td>주문내역 조회</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr>
+                    <td>주문내역 상세 조회</td>
+                    <td><a href="#" target="_blank">02_footer.html</a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr class="divid_end">
+                    <td>관심프로젝트 조회</td>
+                    <td><a href="#" target="_blank">03_pop.html</a></td>
+                    <td class="">0</td>
+                </tr>
+                <!--e:supporter-->
+
+                <!--s:project-->
+                <tr>
+                    <td rowspan="3" class="non_left">project(40)</td>
+                    <td>내 프로젝트</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr>
+                    <td>프로젝트 등록</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <tr class="divid_end">
+                    <td>판매 현황 조회</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <!--e:project-->
+
+                <!--s:funding-->
+                <tr>
+                    <td rowspan="5" class="non_left">funding(60)</td>
+                    <td>펀딩 리스트</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>      
+                <tr>
+                    <td>펀딩 상세</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>   
+                <tr>
+                    <td>리워드 선택</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>             
+                <tr>
+                    <td>결제</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>   
+                <tr class="divid_end">
+                    <td>결제 완료</td>
+                    <td><a href="#" target="_blank"></a></td>
+                    <td class="">0</td>
+                </tr>
+                <!--e:funding-->
+            </tbody>
+        </table>
+    </div>
     
 </body>
 </html>
