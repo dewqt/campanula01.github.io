@@ -260,13 +260,7 @@
   width: 100px;
   height: 30px;
 }
-.wrap_fundingPay .divide_place{
-  width: 100%;
-  height: 10px;
-  background-color: #00b8d40d;
-  margin: 10px 0px;
 
-}
 
 .wrap_fundingPay #purchase_caution_title, .wrap_fundingPay .purchase_agree_title, .wrap_fundingPay .pay_purchase_title{
   font-size: 16px;
@@ -338,8 +332,28 @@
   .wrap_fundingPay #header {
     display: none;
   }
+  .wrap_fundingPay .title{
+    margin-top: 20px;
+  }
 
   .wrap_fundingPay #purchase_wrap{
     display: none;
   }
+
+  .wrap_fundingPay .purchase_agree{
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff; /* 배경색 설정 (원하는 색상으로 변경) */
+  border-top: 2px solid #00b8d40d;
+  padding: 10px; /* 내용과 주변 여백 설정 (원하는 여백으로 변경) */
+  z-index: 1000; /* 다른 요소 위에 표시할 경우 설정 (원하는 값으로 변경) */
+}
+
+.wrap_fundingPay .order_list{
+  margin-bottom: 275px;
+}
+
+
 }
