@@ -33,10 +33,18 @@ $(function() {
     quantityInput.change(function() {
       let currentValue = parseInt(quantityInput.val());
       if (isNaN(currentValue) || currentValue < 1) {
-        alert("최소 구매 가능 수량은 1개입니다.");
+        Swal.fire({
+          icon: 'info',
+          text: '최소 구매 가능 수량은 1개입니다.',
+          confirmButtonColor: '#00b7d4',
+        });
         quantityInput.val(1);
       } else if (currentValue > 500) {
-        alert("최대 구매 가능 수량은 500개입니다.");
+        Swal.fire({
+          icon: 'info',
+          text: '최대 구매 가능 수량은 500개입니다.',
+          confirmButtonColor: '#00b7d4',
+        });
         quantityInput.val(500);
       }
       updateTotalPrice();
@@ -108,7 +116,11 @@ modalOpened = false;
     const anyCheckboxChecked = checkboxes.is(":checked");
 
     if (!anyCheckboxChecked) {
-      alert("체크박스가 하나도 선택되지 않았습니다.");
+      Swal.fire({
+        icon: 'error',
+        text: '체크 박스가 하나도 체크되어있지 않습니다.',
+        confirmButtonColor: '#00b7d4',
+      });
     } else {
       $(".modal").fadeIn();
       modal.addClass("active");

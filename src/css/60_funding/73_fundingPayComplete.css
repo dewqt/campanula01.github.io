@@ -94,7 +94,7 @@
 
 
 .wrap_fundingPay .funding_complete_info{
-  margin-left: 100px;
+  margin-left: 28%;
 }
 
 .wrap_fundingPay .funding_complete_content_all {
@@ -117,7 +117,7 @@
 }
 
 .wrap_fundingPay #p_return_main{
-  width: 300px;
+  width: 200px;
   height: 50px;
   border: none;
   background-color: #00b7d4;
@@ -125,13 +125,111 @@
   border-radius: 10px;
   font-size: 20px;
   margin-top: 10px;
-  margin-left: 26%;
+  margin-right: 100px;
+}
+
+.wrap_fundingPay #p_detail{
+  width: 200px;
+  height: 50px;
+  border: 1px solid #00b7d4;
+  color: #00b7d4;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 100px;
+}
+
+
+
+.wrap_fundingPay .slider-wrap{
+  margin-left: 15%;
+}
+
+.wrap_fundingPay .slick-slider .slick-track, .wrap_fundingPay .slick-slider .slick-list {
+  width: 800px;
+}
+.wrap_fundingPay .slick-slider{
+  width: 800px;
+}
+.wrap_fundingPay .slider {
+  margin-left: 15%;
+
+}
+
+.wrap_fundingPay .slides img {
+  width: 100%;
+  height: auto;
+}
+
+.wrap_fundingPay .slides .slick-slide{
+  margin: 0px 10px;
+}
+
+.wrap_fundingPay .slick-slide img{
+
+  border-radius: 30px;
+}
+
+/* 커스텀 화살표 스타일 */
+.wrap_fundingPay button.slick-prev,
+.wrap_fundingPay button.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: white;
+  border: none;
+}
+
+.wrap_fundingPay .custom-slick-prev {
+  left: 0;
+}
+
+.wrap_fundingPay .custom-slick-next {
+  right: 0;
+}
+
+/*버튼 색깔*/
+.wrap_fundingPay button.slick-prev:before, .wrap_fundingPay button.slick-next:before {
+
+  color: #00b7d4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap_fundingPay p{
+  color: #00b7d4;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@media(max-width:950px){
+  .wrap_fundingPay #p_detail{
+    display: none;
+  }
+    .wrap_fundingPay #p_return_main{
+      margin-left: 150px;
+    }
+
+  
 }
 /* 768px 이하인 경우에만 적용되는 스타일 */
 @media (max-width: 768px) {
-  #header {
+  .wrap_fundingPay #header {
     display: none;
   }
 
+  .wrap_fundingPay .funding_complete_info{
+    margin-top: 20px;
+  }
+
+  .wrap_fundingPay #purchase_wrap{
+    display: none;
+  }
+
+  .wrap_fundingPay .slider-wrap{
+    display: none;
+  }
 
 }
