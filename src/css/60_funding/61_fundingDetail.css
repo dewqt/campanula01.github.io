@@ -1,8 +1,23 @@
+#far {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+}
+
 /* 프로필 컨테이너 스타일 */
 .profile-container {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+}
+
+.wrap_center_detail .likeempty .far {
+  color: #00b7d4; /* 빈 하트의 기본 색상 */
+}
+
+.wrap_center_detail .likeempty .fas {
+  color: #ff0000; /* 가득 찬 하트의 색상 (원하는 색상으로 변경) */
 }
 
 
@@ -153,7 +168,7 @@ border-radius: 5px;
 .price {
 font-size: 24px;
 font-weight: bold;
-margin-top: auto;
+
 }
 /* .reward-selection2 스타일 */
 

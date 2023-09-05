@@ -6,7 +6,7 @@ $(document).ready(function() {
   $(".product-item").each(function() {
       var id = $(this).find(".likeempty").data("id");
       heartStates[id] = false;
-      $(this).find(".far").show();
+      $(this).find(".fas").show();
       $(this).find(".fas").hide();
   });
 
